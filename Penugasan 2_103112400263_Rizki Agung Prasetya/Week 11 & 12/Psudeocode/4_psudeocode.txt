@@ -1,0 +1,13 @@
+program Kopi
+variabel
+    gula, kopi, jumlahGula, jumlahKopi, terbuat: integer
+algoritma
+    input(gula, kopi, jumlahGula, jumlahKopi)
+    terbuat = 0
+    while kopi >= jumlahKopi and gula >= jumlahGula do
+        kopi = kopi - jumlahKopi
+        gula = gula - jumlahGula
+        terbuat = terbuat + 1
+    end while
+    output(terbuat)
+end program

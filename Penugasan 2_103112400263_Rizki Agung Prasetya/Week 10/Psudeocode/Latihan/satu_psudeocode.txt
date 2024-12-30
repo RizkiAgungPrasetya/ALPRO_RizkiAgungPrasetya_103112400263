@@ -1,0 +1,17 @@
+program KategoriBilangan
+variabel
+    bilangan: integer
+algoritma
+    output("Masukkan bilangan : ")
+    input(bilangan)
+    if bilangan >= 0 then
+        output("Bilangan Positif")
+        if bilangan % 2 == 0 then
+            output(" Genap")
+        else
+            output(" Ganjil")
+        end if
+    else
+        output("Bilangan Negatif")
+    end if
+end program

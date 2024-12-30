@@ -1,0 +1,22 @@
+program KategoriNilaiTAK
+variabel
+    bilangan: float
+algoritma
+    output("Masukkan Nilai TAK (1.0-4.0) : ")
+    input(bilangan)
+    if bilangan >= 0.0 and bilangan <= 4.0 then
+        if bilangan < 2.0 then
+            output("Poor")
+        else if bilangan >= 2.0 and bilangan <= 2.75 then
+            output("Fair")
+        else if bilangan > 2.75 and bilangan <= 3.0 then
+            output("Satisfactory")
+        else if bilangan > 3.0 and bilangan <= 3.5 then
+            output("Very Good")
+        else if bilangan > 3.5 then
+            output("Excellent")
+        end if
+    else
+        output("Nilai TAK tidak sesuai")
+    end if
+end program

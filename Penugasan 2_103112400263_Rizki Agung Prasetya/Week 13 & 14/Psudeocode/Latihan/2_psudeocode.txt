@@ -1,0 +1,17 @@
+program HitungAngkaGenap
+variabel
+    num, counter, d: integer
+algoritma
+    input(num)
+    counter = 0
+
+    while num > 0 do
+        d = num mod 10
+        if d mod 2 = 0 and d != 0 then
+            counter = counter + 1
+        end if
+        num = num / 10
+    end while
+
+    output(counter)
+end program

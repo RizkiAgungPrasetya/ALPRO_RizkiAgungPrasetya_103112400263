@@ -1,0 +1,13 @@
+program SportClub
+variabel
+    s, minggu: integer
+algoritma
+    input(s)
+    minggu = s / 7 
+    
+    if s % 7 == 0 then
+        output("Minggu ke- ", minggu)
+    else 
+        output("Minggu ke- ", minggu + 1)
+    end if
+end program

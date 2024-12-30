@@ -1,0 +1,13 @@
+program HitungHarga
+variabel
+    harga: integer
+    asessmen: boolean
+algoritma
+    input(harga, asessmen)
+    if asessmen == true then
+        diskon = harga * 35 / 100
+        output(harga - diskon)
+    else
+        output(harga)
+    end if
+end program

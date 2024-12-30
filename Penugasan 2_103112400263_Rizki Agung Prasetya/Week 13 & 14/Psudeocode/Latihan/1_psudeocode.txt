@@ -1,0 +1,12 @@
+program PembagiAngka
+variabel
+    angka, i: integer
+algoritma
+    input(angka)
+
+    for i = 1 to angka do
+        if angka mod i = 0 then
+            output(i, " ")
+        end if
+    end for
+end program
